@@ -2664,6 +2664,7 @@ function noticeDialog(first){
       li('資料備份','請定期透過「匯出／匯入」匯出代碼並另行保存。於其他裝置使用或與他人共享資料時，亦請以代碼匯入。'),
       li('網路連線','以網址開啟時須連線網路；電腦版離線檔案可直接開啟，無須網路連線及網址。'),
       li('多人使用','各使用者的資料彼此獨立，不會互相影響或覆蓋。'),
+      li('製作說明','本工具使用 Claude（Anthropic）協助製作。'),
       li('免責聲明','本工具僅提供紀錄與整理功能，製作者無法查看或管理使用者所建立、匯出或分享的內容。使用者應自行負責其內容及使用方式；因使用本工具所生之任何爭議、損失（含資料遺失）或其他問題，製作者概不負責。')),
     h('label',{class:'nbt-opt notice-off'},cb,h('span',{},'下次不再顯示')));
   const save=()=>{ try{ if(cb.checked) localStorage.setItem('worldtimeline-notice2','off'); else localStorage.removeItem('worldtimeline-notice2'); }catch(e){} };
